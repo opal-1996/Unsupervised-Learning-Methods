@@ -23,7 +23,15 @@ Assume we are given a dataset $D$ and we want to group the data into a few cohen
 * Initialize cluster centroids $\mu_1, \mu_2, ..., \mu_k \in R^n$ randomly.
 * Repeat until convergence:
   * For every $i$, set $c^{(i)}:=\arg \min _j\left\|x^{(i)}-\mu_j\right\|^2$
-  * For every j, set $\mu_j:=\frac{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\} x^{(i)}}{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\}}$
+  * For every j, set 
+  
+  $$
+  \begin{aligned}
+  \mu_j:=\frac{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\} x^{(i)}}{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\}}
+  \end{aligned}
+  $$
+  
+
 
 ![image](Images/img1.png)
 
@@ -143,4 +151,5 @@ Autoencoders leverage neural networks to compress data and then recreate a new r
 ## References
 
 https://brilliant.org/wiki/gaussian-mixture-model/
+
 https://www.ibm.com/topics/unsupervised-learning
