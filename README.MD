@@ -25,14 +25,12 @@ Assume we are given a dataset $D$ and we want to group the data into a few cohen
   * For every $i$, set $c^{(i)}:=\arg \min _j\left\|x^{(i)}-\mu_j\right\|^2$
   * For every j, set 
   
-  $$
-  \begin{aligned}
-  \mu_j:=\frac{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\} x^{(i)}}{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\}}
-  \end{aligned}
-  $$
+$$
+\begin{aligned}
+\mu_j:=\frac{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\} x^{(i)}}{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\}}
+\end{aligned}
+$$
   
-
-
 ![image](Images/img1.png)
 
 [Image source](https://stanford.edu/~cpiech/cs221/handouts/kmeans.html)
