@@ -27,7 +27,7 @@ Assume we are given a dataset $D$ and we want to group the data into a few cohen
   
 $$
 \begin{aligned}
-\mu_j:=\frac{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\} x^{(i)}}{\sum_{i=1}^m 1\left\{c^{(i)}=j\right\}}
+\mu_j:=\frac{\sum_{i=1}^m 1\{c^{(i)}=j\} x^{(i)}}{\sum_{i=1}^m 1\{c^{(i)}=j\}}
 \end{aligned}
 $$
   
